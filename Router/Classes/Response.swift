@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol ResponseType {
+public protocol ResponseType {
     associatedtype Response
     associatedtype Executor: ExecutorType where Executor.Response == Self
     var response: Response { get }
@@ -17,21 +17,21 @@ protocol ResponseType {
 }
 
 extension UIViewController: ResponseType {
-    typealias Response = UIViewController
+    public typealias Response = UIViewController
     //    typealias Executor = PushExecutor
     
-    var response: Response { return self }
-    func prefersExecutor() -> PushExecutor<UIViewController> {
+    public var response: Response { return self }
+    public func prefersExecutor() -> PushExecutor<UIViewController> {
         return Executor()
     }
 }
 
-struct ActionResponse: ResponseType {
-    typealias Response = () -> Void
-    typealias Executor = ActionExecutor
+public struct ActionResponse: ResponseType {
+    public typealias Response = () -> Void
+    public typealias Executor = ActionExecutor
     
-    var response: Response
-    func prefersExecutor() -> Executor {
+    public var response: Response
+    public func prefersExecutor() -> Executor {
         return Executor()
     }
 }

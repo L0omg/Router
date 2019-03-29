@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol HookType {
+public protocol HookType {
     associatedtype Request
     associatedtype Response
     func shouldStart(_ path: Request) -> Bool
@@ -17,50 +17,50 @@ protocol HookType {
     func finishRouter(_ path: Request, response: Response, finish: Bool /*false:被中断*/)
 }
 
-extension HookType {
+public extension HookType {
     func shouldStart(_ path: Request) -> Bool { return true }
     func beginRouter(_ path: Request) {}
     func shouldHandler(_ path: Request, response: Response) -> Bool { return true }
     func finishRouter(_ path: Request, response: Response, finish: Bool /*false:被中断*/) {}
 }
 
-struct EmptyHook<Request, Response>: HookType {}
+public struct EmptyHook<Request, Response>: HookType {}
 
-struct AnyHook<Request, Response> {
-    typealias ShouldStart = (Request) -> Bool
-    typealias BeginRouter = (Request) -> Void
-    typealias ShouldHandler = (Request, Response) -> Bool
-    typealias FinishRouter = (Request, Response, Bool) -> Void
+public struct AnyHook<Request, Response> {
+    public typealias ShouldStart = (Request) -> Bool
+    public typealias BeginRouter = (Request) -> Void
+    public typealias ShouldHandler = (Request, Response) -> Bool
+    public typealias FinishRouter = (Request, Response, Bool) -> Void
     
-    let shouldStart: ShouldStart?
-    let beginRouter: BeginRouter?
-    let shouldHandler: ShouldHandler?
-    let finishRouter: FinishRouter?
+    public let shouldStart: ShouldStart?
+    public let beginRouter: BeginRouter?
+    public let shouldHandler: ShouldHandler?
+    public let finishRouter: FinishRouter?
 }
 
 extension AnyHook: HookType {
-    func shouldStart(_ path: Request) -> Bool {
+    public func shouldStart(_ path: Request) -> Bool {
         guard let shouldStart = shouldStart else {
             return true
         }
         return shouldStart(path)
     }
     
-    func beginRouter(_ path: Request) {
+    public func beginRouter(_ path: Request) {
         guard let beginRouter = beginRouter else {
             return
         }
         return beginRouter(path)
     }
     
-    func shouldHandler(_ path: Request, response: Response) -> Bool {
+    public func shouldHandler(_ path: Request, response: Response) -> Bool {
         guard let shouldHandler = shouldHandler else {
             return true
         }
         return shouldHandler(path, response)
     }
     
-    func finishRouter(_ path: Request, response: Response, finish: Bool) {
+    public func finishRouter(_ path: Request, response: Response, finish: Bool) {
         guard let finishRouter = finishRouter else {
             return
         }

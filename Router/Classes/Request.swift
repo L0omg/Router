@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RequestType {
+public protocol RequestType {
     associatedtype Response: ResponseType
     func send(_ completionHandler:(Response) -> Void)
 }

@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-struct Router {
-    func router<T: RequestType, E: ExecutorType, H: HookType>(to path: T, executor: E, hook: H) where E.Response == T.Response, H.Request == T, H.Response == T.Response {
+public struct Router {
+    public func router<T: RequestType, E: ExecutorType, H: HookType>(to path: T, executor: E, hook: H) where E.Response == T.Response, H.Request == T, H.Response == T.Response {
         guard hook.shouldStart(path) else {
             return
         }
@@ -25,27 +25,27 @@ struct Router {
         }
     }
     
-    static let `default` = Router()
+    public static let `default` = Router()
 }
 
-extension Router {
-    func router<T: RequestType>(to path: T) {
+public extension Router {
+    public func router<T: RequestType>(to path: T) {
         router(to: path, executor:DefaultExecutor())
     }
     
-    func router<T: RequestType, E: ExecutorType>(to path: T, executor: E) where E.Response == T.Response {
+    public func router<T: RequestType, E: ExecutorType>(to path: T, executor: E) where E.Response == T.Response {
         router(to: path, executor: executor, hook: EmptyHook())
     }
     
-    func router<T: RequestType, H: HookType>(to path: T, hook: H) where H.Request == T, H.Response == T.Response {
+    public func router<T: RequestType, H: HookType>(to path: T, hook: H) where H.Request == T, H.Response == T.Response {
         router(to: path, executor: DefaultExecutor(), hook: hook)
     }
     
-    func router<T: RequestType>(to path: T, executor: @escaping (T.Response) -> Void) {
+    public func router<T: RequestType>(to path: T, executor: @escaping (T.Response) -> Void) {
         router(to: path, executor: AnyExcutor(executor))
     }
     
-    func router<T: RequestType>(to path: T,
+    public func router<T: RequestType>(to path: T,
                                       shouldStart: AnyHook<T, T.Response>.ShouldStart? = nil,
                                       beginRouter: AnyHook<T, T.Response>.BeginRouter? = nil,
                                       shouldHandler: AnyHook<T, T.Response>.ShouldHandler? = nil,
@@ -58,16 +58,16 @@ extension Router {
 }
 
 //MARK: ViewController
-extension Router {
-    func push<T: RequestType>(to path: T, animated: Bool = true) where T.Response.Response == UIViewController {
+public extension Router {
+    public func push<T: RequestType>(to path: T, animated: Bool = true) where T.Response.Response == UIViewController {
         router(to: path, executor: PushExecutor<T.Response>(animated: animated))
     }
     
-    func present<T: RequestType>(to path: T, animated: Bool = true, completion: PresentExecutor<T.Response>.Completion? = nil) where T.Response.Response == UIViewController {
+    public func present<T: RequestType>(to path: T, animated: Bool = true, completion: PresentExecutor<T.Response>.Completion? = nil) where T.Response.Response == UIViewController {
         router(to: path, executor: PresentExecutor<T.Response>(animated: animated, completion: completion))
     }
     
-    func resetRoot<T: RequestType>(to path: T, wrapper: UINavigationController? = nil) where T.Response.Response == UIViewController  {
+    public func resetRoot<T: RequestType>(to path: T, wrapper: UINavigationController? = nil) where T.Response.Response == UIViewController  {
         router(to: path, executor: ResetRootExecuter(wrapper))
     }
 }

@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3435F1B1224E05CA00D9E3E2 /* ShareRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3435F18A224DF8E800D9E3E2 /* ShareRouter.framework */; };
+		3435F1B2224E05CA00D9E3E2 /* ShareRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3435F18A224DF8E800D9E3E2 /* ShareRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3435F1B6224E05CA00D9E3E2 /* LoginRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343806A9224DD9F60058E8DD /* LoginRouter.framework */; };
+		3435F1B7224E05CA00D9E3E2 /* LoginRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 343806A9224DD9F60058E8DD /* LoginRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3435F1BB224E05CA00D9E3E2 /* DetailRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343806B4224DDA040058E8DD /* DetailRouter.framework */; };
+		3435F1BC224E05CA00D9E3E2 /* DetailRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 343806B4224DDA040058E8DD /* DetailRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3435F1C0224E05CA00D9E3E2 /* HomeRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343806BF224DDA0D0058E8DD /* HomeRouter.framework */; };
+		3435F1C1224E05CA00D9E3E2 /* HomeRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 343806BF224DDA0D0058E8DD /* HomeRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34380597224DD6400058E8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34380596224DD6400058E8DD /* Assets.xcassets */; };
+		3438059A224DD6400058E8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34380598224DD6400058E8DD /* LaunchScreen.storyboard */; };
+		343805A7224DD65E0058E8DD /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343805A6224DD6530058E8DD /* Router.framework */; };
+		343805A8224DD65E0058E8DD /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 343805A6224DD6530058E8DD /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34380653224DD90A0058E8DD /* LoginModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3438061A224DD7A70058E8DD /* LoginModule.framework */; };
+		34380654224DD90A0058E8DD /* LoginModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3438061A224DD7A70058E8DD /* LoginModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34380657224DD90A0058E8DD /* DetailModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34380642224DD8770058E8DD /* DetailModule.framework */; };
+		34380658224DD90A0058E8DD /* DetailModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34380642224DD8770058E8DD /* DetailModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3438065B224DD90A0058E8DD /* HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34380617224DD7A70058E8DD /* HomeModule.framework */; };
+		3438065C224DD90A0058E8DD /* HomeModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34380617224DD7A70058E8DD /* HomeModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34380660224DD93C0058E8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438065F224DD93C0058E8DD /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3435F189224DF8E800D9E3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3435F185224DF8E800D9E3E2 /* ShareRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3435F176224DF8D900D9E3E2;
+			remoteInfo = ShareRouter;
+		};
+		3435F1B3224E05CA00D9E3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3435F185224DF8E800D9E3E2 /* ShareRouter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3435F175224DF8D900D9E3E2;
+			remoteInfo = ShareRouter;
+		};
+		3435F1B8224E05CA00D9E3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806A4224DD9F60058E8DD /* LoginRouter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3438066A224DD9B50058E8DD;
+			remoteInfo = LoginRouter;
+		};
+		3435F1BD224E05CA00D9E3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806AF224DDA040058E8DD /* DetailRouter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 34380694224DD9E20058E8DD;
+			remoteInfo = DetailRouter;
+		};
+		3435F1C2224E05CA00D9E3E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806BA224DDA0D0058E8DD /* HomeRouter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3438067F224DD9C90058E8DD;
+			remoteInfo = HomeRouter;
+		};
+		343805A5224DD6530058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343805A1224DD6530058E8DD /* Router.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3438051E224DD13A0058E8DD;
+			remoteInfo = Router;
+		};
+		343805A9224DD65E0058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343805A1224DD6530058E8DD /* Router.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3438051D224DD13A0058E8DD;
+			remoteInfo = Router;
+		};
+		34380616224DD7A70058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34380604224DD7A70058E8DD /* HomeModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343805F3224DD74B0058E8DD;
+			remoteInfo = HomeModule;
+		};
+		34380619224DD7A70058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3438060B224DD7A70058E8DD /* LoginModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343805B6224DD6930058E8DD;
+			remoteInfo = LoginModule;
+		};
+		34380641224DD8770058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3438063D224DD8770058E8DD /* DetailModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3438062E224DD8680058E8DD;
+			remoteInfo = DetailModule;
+		};
+		34380655224DD90A0058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3438060B224DD7A70058E8DD /* LoginModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 343805B5224DD6930058E8DD;
+			remoteInfo = LoginModule;
+		};
+		34380659224DD90A0058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3438063D224DD8770058E8DD /* DetailModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3438062D224DD8680058E8DD;
+			remoteInfo = DetailModule;
+		};
+		3438065D224DD90A0058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34380604224DD7A70058E8DD /* HomeModule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 343805F2224DD74B0058E8DD;
+			remoteInfo = HomeModule;
+		};
+		343806A8224DD9F60058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806A4224DD9F60058E8DD /* LoginRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3438066B224DD9B50058E8DD;
+			remoteInfo = LoginRouter;
+		};
+		343806B3224DDA040058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806AF224DDA040058E8DD /* DetailRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34380695224DD9E20058E8DD;
+			remoteInfo = DetailRouter;
+		};
+		343806BE224DDA0D0058E8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 343806BA224DDA0D0058E8DD /* HomeRouter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34380680224DD9C90058E8DD;
+			remoteInfo = HomeRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		343805AB224DD65E0058E8DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34380654224DD90A0058E8DD /* LoginModule.framework in Embed Frameworks */,
+				343805A8224DD65E0058E8DD /* Router.framework in Embed Frameworks */,
+				3435F1C1224E05CA00D9E3E2 /* HomeRouter.framework in Embed Frameworks */,
+				34380658224DD90A0058E8DD /* DetailModule.framework in Embed Frameworks */,
+				3435F1B2224E05CA00D9E3E2 /* ShareRouter.framework in Embed Frameworks */,
+				3438065C224DD90A0058E8DD /* HomeModule.framework in Embed Frameworks */,
+				3435F1B7224E05CA00D9E3E2 /* LoginRouter.framework in Embed Frameworks */,
+				3435F1BC224E05CA00D9E3E2 /* DetailRouter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3435F185224DF8E800D9E3E2 /* ShareRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ShareRouter.xcodeproj; sourceTree = "<group>"; };
+		3438058C224DD63F0058E8DD /* MultiModuleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiModuleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34380596224DD6400058E8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34380599224DD6400058E8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3438059B224DD6400058E8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		343805A1224DD6530058E8DD /* Router.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Router.xcodeproj; path = ../Router/Router.xcodeproj; sourceTree = "<group>"; };
+		34380604224DD7A70058E8DD /* HomeModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HomeModule.xcodeproj; sourceTree = "<group>"; };
+		3438060B224DD7A70058E8DD /* LoginModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = LoginModule.xcodeproj; sourceTree = "<group>"; };
+		3438063D224DD8770058E8DD /* DetailModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DetailModule.xcodeproj; sourceTree = "<group>"; };
+		3438065F224DD93C0058E8DD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343806A4224DD9F60058E8DD /* LoginRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = LoginRouter.xcodeproj; sourceTree = "<group>"; };
+		343806AF224DDA040058E8DD /* DetailRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DetailRouter.xcodeproj; sourceTree = "<group>"; };
+		343806BA224DDA0D0058E8DD /* HomeRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HomeRouter.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34380589224DD63F0058E8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34380653224DD90A0058E8DD /* LoginModule.framework in Frameworks */,
+				343805A7224DD65E0058E8DD /* Router.framework in Frameworks */,
+				3435F1C0224E05CA00D9E3E2 /* HomeRouter.framework in Frameworks */,
+				34380657224DD90A0058E8DD /* DetailModule.framework in Frameworks */,
+				3435F1B1224E05CA00D9E3E2 /* ShareRouter.framework in Frameworks */,
+				3438065B224DD90A0058E8DD /* HomeModule.framework in Frameworks */,
+				3435F1B6224E05CA00D9E3E2 /* LoginRouter.framework in Frameworks */,
+				3435F1BB224E05CA00D9E3E2 /* DetailRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3435F167224DF87D00D9E3E2 /* ShareModule */ = {
+			isa = PBXGroup;
+			children = (
+				3435F181224DF8E800D9E3E2 /* ShareRouter */,
+			);
+			path = ShareModule;
+			sourceTree = "<group>";
+		};
+		3435F181224DF8E800D9E3E2 /* ShareRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3435F185224DF8E800D9E3E2 /* ShareRouter.xcodeproj */,
+			);
+			path = ShareRouter;
+			sourceTree = "<group>";
+		};
+		3435F186224DF8E800D9E3E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3435F18A224DF8E800D9E3E2 /* ShareRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34380583224DD63F0058E8DD = {
+			isa = PBXGroup;
+			children = (
+				343805FF224DD7A70058E8DD /* Modules */,
+				343805A1224DD6530058E8DD /* Router.xcodeproj */,
+				3438058E224DD63F0058E8DD /* MultiModuleDemo */,
+				3438058D224DD63F0058E8DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3438058D224DD63F0058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3438058C224DD63F0058E8DD /* MultiModuleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3438058E224DD63F0058E8DD /* MultiModuleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3438065F224DD93C0058E8DD /* AppDelegate.swift */,
+				34380596224DD6400058E8DD /* Assets.xcassets */,
+				34380598224DD6400058E8DD /* LaunchScreen.storyboard */,
+				3438059B224DD6400058E8DD /* Info.plist */,
+			);
+			path = MultiModuleDemo;
+			sourceTree = "<group>";
+		};
+		343805A2224DD6530058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343805A6224DD6530058E8DD /* Router.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343805FF224DD7A70058E8DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3435F167224DF87D00D9E3E2 /* ShareModule */,
+				34380607224DD7A70058E8DD /* LoginModule */,
+				34380639224DD8770058E8DD /* DetailModule */,
+				34380600224DD7A70058E8DD /* HomeModule */,
+			);
+			name = Modules;
+			path = ../Modules;
+			sourceTree = "<group>";
+		};
+		34380600224DD7A70058E8DD /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				343806B6224DDA0D0058E8DD /* HomeRouter */,
+				34380604224DD7A70058E8DD /* HomeModule.xcodeproj */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		34380605224DD7A70058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34380617224DD7A70058E8DD /* HomeModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34380607224DD7A70058E8DD /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				343806A0224DD9F60058E8DD /* LoginRouter */,
+				3438060B224DD7A70058E8DD /* LoginModule.xcodeproj */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		3438060C224DD7A70058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3438061A224DD7A70058E8DD /* LoginModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34380639224DD8770058E8DD /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				343806AB224DDA040058E8DD /* DetailRouter */,
+				3438063D224DD8770058E8DD /* DetailModule.xcodeproj */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		3438063E224DD8770058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34380642224DD8770058E8DD /* DetailModule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343806A0224DD9F60058E8DD /* LoginRouter */ = {
+			isa = PBXGroup;
+			children = (
+				343806A4224DD9F60058E8DD /* LoginRouter.xcodeproj */,
+			);
+			path = LoginRouter;
+			sourceTree = "<group>";
+		};
+		343806A5224DD9F60058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343806A9224DD9F60058E8DD /* LoginRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343806AB224DDA040058E8DD /* DetailRouter */ = {
+			isa = PBXGroup;
+			children = (
+				343806AF224DDA040058E8DD /* DetailRouter.xcodeproj */,
+			);
+			path = DetailRouter;
+			sourceTree = "<group>";
+		};
+		343806B0224DDA040058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343806B4224DDA040058E8DD /* DetailRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		343806B6224DDA0D0058E8DD /* HomeRouter */ = {
+			isa = PBXGroup;
+			children = (
+				343806BA224DDA0D0058E8DD /* HomeRouter.xcodeproj */,
+			);
+			path = HomeRouter;
+			sourceTree = "<group>";
+		};
+		343806BB224DDA0D0058E8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				343806BF224DDA0D0058E8DD /* HomeRouter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3438058B224DD63F0058E8DD /* MultiModuleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3438059E224DD6400058E8DD /* Build configuration list for PBXNativeTarget "MultiModuleDemo" */;
+			buildPhases = (
+				34380588224DD63F0058E8DD /* Sources */,
+				34380589224DD63F0058E8DD /* Frameworks */,
+				3438058A224DD63F0058E8DD /* Resources */,
+				343805AB224DD65E0058E8DD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343805AA224DD65E0058E8DD /* PBXTargetDependency */,
+				34380656224DD90A0058E8DD /* PBXTargetDependency */,
+				3438065A224DD90A0058E8DD /* PBXTargetDependency */,
+				3438065E224DD90A0058E8DD /* PBXTargetDependency */,
+				3435F1B4224E05CA00D9E3E2 /* PBXTargetDependency */,
+				3435F1B9224E05CA00D9E3E2 /* PBXTargetDependency */,
+				3435F1BE224E05CA00D9E3E2 /* PBXTargetDependency */,
+				3435F1C3224E05CA00D9E3E2 /* PBXTargetDependency */,
+			);
+			name = MultiModuleDemo;
+			productName = MultiModuleDemo;
+			productReference = 3438058C224DD63F0058E8DD /* MultiModuleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34380584224DD63F0058E8DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Hebao;
+				TargetAttributes = {
+					3438058B224DD63F0058E8DD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 34380587224DD63F0058E8DD /* Build configuration list for PBXProject "MultiModuleDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34380583224DD63F0058E8DD;
+			productRefGroup = 3438058D224DD63F0058E8DD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3438063E224DD8770058E8DD /* Products */;
+					ProjectRef = 3438063D224DD8770058E8DD /* DetailModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 343806B0224DDA040058E8DD /* Products */;
+					ProjectRef = 343806AF224DDA040058E8DD /* DetailRouter.xcodeproj */;
+				},
+				{
+					ProductGroup = 34380605224DD7A70058E8DD /* Products */;
+					ProjectRef = 34380604224DD7A70058E8DD /* HomeModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 343806BB224DDA0D0058E8DD /* Products */;
+					ProjectRef = 343806BA224DDA0D0058E8DD /* HomeRouter.xcodeproj */;
+				},
+				{
+					ProductGroup = 3438060C224DD7A70058E8DD /* Products */;
+					ProjectRef = 3438060B224DD7A70058E8DD /* LoginModule.xcodeproj */;
+				},
+				{
+					ProductGroup = 343806A5224DD9F60058E8DD /* Products */;
+					ProjectRef = 343806A4224DD9F60058E8DD /* LoginRouter.xcodeproj */;
+				},
+				{
+					ProductGroup = 343805A2224DD6530058E8DD /* Products */;
+					ProjectRef = 343805A1224DD6530058E8DD /* Router.xcodeproj */;
+				},
+				{
+					ProductGroup = 3435F186224DF8E800D9E3E2 /* Products */;
+					ProjectRef = 3435F185224DF8E800D9E3E2 /* ShareRouter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3438058B224DD63F0058E8DD /* MultiModuleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3435F18A224DF8E800D9E3E2 /* ShareRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShareRouter.framework;
+			remoteRef = 3435F189224DF8E800D9E3E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		343805A6224DD6530058E8DD /* Router.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Router.framework;
+			remoteRef = 343805A5224DD6530058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34380617224DD7A70058E8DD /* HomeModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HomeModule.framework;
+			remoteRef = 34380616224DD7A70058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3438061A224DD7A70058E8DD /* LoginModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoginModule.framework;
+			remoteRef = 34380619224DD7A70058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34380642224DD8770058E8DD /* DetailModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DetailModule.framework;
+			remoteRef = 34380641224DD8770058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		343806A9224DD9F60058E8DD /* LoginRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LoginRouter.framework;
+			remoteRef = 343806A8224DD9F60058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		343806B4224DDA040058E8DD /* DetailRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DetailRouter.framework;
+			remoteRef = 343806B3224DDA040058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		343806BF224DDA0D0058E8DD /* HomeRouter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HomeRouter.framework;
+			remoteRef = 343806BE224DDA0D0058E8DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3438058A224DD63F0058E8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3438059A224DD6400058E8DD /* LaunchScreen.storyboard in Resources */,
+				34380597224DD6400058E8DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34380588224DD63F0058E8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34380660224DD93C0058E8DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3435F1B4224E05CA00D9E3E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShareRouter;
+			targetProxy = 3435F1B3224E05CA00D9E3E2 /* PBXContainerItemProxy */;
+		};
+		3435F1B9224E05CA00D9E3E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoginRouter;
+			targetProxy = 3435F1B8224E05CA00D9E3E2 /* PBXContainerItemProxy */;
+		};
+		3435F1BE224E05CA00D9E3E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DetailRouter;
+			targetProxy = 3435F1BD224E05CA00D9E3E2 /* PBXContainerItemProxy */;
+		};
+		3435F1C3224E05CA00D9E3E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HomeRouter;
+			targetProxy = 3435F1C2224E05CA00D9E3E2 /* PBXContainerItemProxy */;
+		};
+		343805AA224DD65E0058E8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Router;
+			targetProxy = 343805A9224DD65E0058E8DD /* PBXContainerItemProxy */;
+		};
+		34380656224DD90A0058E8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoginModule;
+			targetProxy = 34380655224DD90A0058E8DD /* PBXContainerItemProxy */;
+		};
+		3438065A224DD90A0058E8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DetailModule;
+			targetProxy = 34380659224DD90A0058E8DD /* PBXContainerItemProxy */;
+		};
+		3438065E224DD90A0058E8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HomeModule;
+			targetProxy = 3438065D224DD90A0058E8DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34380598224DD6400058E8DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34380599224DD6400058E8DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3438059C224DD6400058E8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3438059D224DD6400058E8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3438059F224DD6400058E8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MultiModuleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.MultiModuleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		343805A0224DD6400058E8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = MultiModuleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.MultiModuleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34380587224DD63F0058E8DD /* Build configuration list for PBXProject "MultiModuleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3438059C224DD6400058E8DD /* Debug */,
+				3438059D224DD6400058E8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3438059E224DD6400058E8DD /* Build configuration list for PBXNativeTarget "MultiModuleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3438059F224DD6400058E8DD /* Debug */,
+				343805A0224DD6400058E8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34380584224DD63F0058E8DD /* Project object */;
+}

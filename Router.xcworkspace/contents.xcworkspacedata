@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Router/Router.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SingleModuleDemo/../MultiModuleDemo/MultiModuleDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SingleModuleDemo/SingleModuleDemo.xcodeproj">
+   </FileRef>
+</Workspace>

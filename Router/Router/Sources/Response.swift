@@ -16,7 +16,8 @@ public protocol ResponseType {
     func prefersExecutor() -> Executor
 }
 
-extension UIViewController: ResponseType {
+public typealias ViewControllerResponse = UIViewController
+extension ViewControllerResponse: ResponseType {
     public typealias Response = UIViewController
     //    typealias Executor = PushExecutor
     

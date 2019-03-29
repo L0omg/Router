@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3435F164224DF30800D9E3E2 /* RequestImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435F163224DF30800D9E3E2 /* RequestImp.swift */; };
 		34380523224DD13A0058E8DD /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 34380521224DD13A0058E8DD /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34380539224DD1B50058E8DD /* Hook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34380534224DD1B50058E8DD /* Hook.swift */; };
 		3438053A224DD1B50058E8DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34380535224DD1B50058E8DD /* Response.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3435F163224DF30800D9E3E2 /* RequestImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestImp.swift; sourceTree = "<group>"; };
 		3438051E224DD13A0058E8DD /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34380521224DD13A0058E8DD /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		34380522224DD13A0058E8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				34380536224DD1B50058E8DD /* Router.swift */,
 				34380537224DD1B50058E8DD /* Request.swift */,
+				3435F163224DF30800D9E3E2 /* RequestImp.swift */,
 				34380535224DD1B50058E8DD /* Response.swift */,
 				34380538224DD1B50058E8DD /* Executor.swift */,
 				34380534224DD1B50058E8DD /* Hook.swift */,
@@ -156,6 +159,7 @@
 			files = (
 				3438053A224DD1B50058E8DD /* Response.swift in Sources */,
 				3438053D224DD1B50058E8DD /* Executor.swift in Sources */,
+				3435F164224DF30800D9E3E2 /* RequestImp.swift in Sources */,
 				3438053C224DD1B50058E8DD /* Request.swift in Sources */,
 				3438053B224DD1B50058E8DD /* Router.swift in Sources */,
 				34380539224DD1B50058E8DD /* Hook.swift in Sources */,
@@ -294,7 +298,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = JYNJJVY346;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -306,7 +310,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebao.Router;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -322,7 +326,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = JYNJJVY346;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -334,7 +338,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hebao.Router;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
